@@ -1,0 +1,10 @@
+/Users/vknez/Documents/Programming/DesignPatterns/Memento/ConsoleApp/bin/Debug/netcoreapp2.0/ConsoleApp.deps.json
+/Users/vknez/Documents/Programming/DesignPatterns/Memento/ConsoleApp/bin/Debug/netcoreapp2.0/ConsoleApp.runtimeconfig.json
+/Users/vknez/Documents/Programming/DesignPatterns/Memento/ConsoleApp/bin/Debug/netcoreapp2.0/ConsoleApp.runtimeconfig.dev.json
+/Users/vknez/Documents/Programming/DesignPatterns/Memento/ConsoleApp/bin/Debug/netcoreapp2.0/ConsoleApp.dll
+/Users/vknez/Documents/Programming/DesignPatterns/Memento/ConsoleApp/bin/Debug/netcoreapp2.0/ConsoleApp.pdb
+/Users/vknez/Documents/Programming/DesignPatterns/Memento/ConsoleApp/obj/Debug/netcoreapp2.0/ConsoleApp.csproj.CoreCompileInputs.cache
+/Users/vknez/Documents/Programming/DesignPatterns/Memento/ConsoleApp/obj/Debug/netcoreapp2.0/ConsoleApp.AssemblyInfoInputs.cache
+/Users/vknez/Documents/Programming/DesignPatterns/Memento/ConsoleApp/obj/Debug/netcoreapp2.0/ConsoleApp.AssemblyInfo.cs
+/Users/vknez/Documents/Programming/DesignPatterns/Memento/ConsoleApp/obj/Debug/netcoreapp2.0/ConsoleApp.dll
+/Users/vknez/Documents/Programming/DesignPatterns/Memento/ConsoleApp/obj/Debug/netcoreapp2.0/ConsoleApp.pdb
