@@ -5,7 +5,8 @@ namespace ConsoleApp
 {
     public class Application
     {
-        private readonly Stack<IMemento> states = new Stack<IMemento>();
+        private readonly Stack<IMemento> undoStates = new Stack<IMemento>();
+        private readonly Stack<IMemento> redoStates = new Stack<IMemento>();
         private readonly ConsoleOutput consoleOutput = new ConsoleOutput();
 
         public void Start()
@@ -18,9 +19,13 @@ namespace ConsoleApp
             {
                 var value = Console.ReadLine();
 
-                if (value == "r")
+                if (value == "u")
                 {
                     Undo();
+                }
+                else if (value == "r")
+                {
+                    Redo();
                 }
                 else if (value == "x")
                 {
@@ -37,16 +42,32 @@ namespace ConsoleApp
         private void StoreState()
         {
             var memento = consoleOutput.CreateMemento();
-            states.Push(memento);
+            undoStates.Push(memento);
+            redoStates.Clear();
         }
 
         private void Undo()
         {
-            if (states.Count > 1)
+            if (undoStates.Count > 1)
             {
-                // discard current state
-                states.Pop();
-                var lastState = states.Peek();
+                var redoState = undoStates.Pop();
+                redoStates.Push(redoState);
+
+                var lastState = undoStates.Peek();
+                consoleOutput.SetMemento(lastState);
+            }
+            else
+            {
+                consoleOutput.initializeOutput();
+            }
+        }
+
+        private void Redo()
+        {
+            if (redoStates.Count > 0)
+            {
+                var lastState = redoStates.Pop();
+                undoStates.Push(lastState);
                 consoleOutput.SetMemento(lastState);
             }
             else

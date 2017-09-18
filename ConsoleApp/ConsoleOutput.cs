@@ -16,7 +16,7 @@ namespace ConsoleApp
             Console.WriteLine();
             Console.WriteLine();
 
-            Console.WriteLine("Type 'x' to exit, 'r' to redo");
+            Console.WriteLine("Type 'x' to exit, 'u' to undo, 'r' to redo");
             Console.WriteLine("Type some word:");
         }
 
